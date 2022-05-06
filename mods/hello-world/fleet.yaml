@@ -1,8 +1,11 @@
-spec:
-  template:
-    spec:
-      containers:
-        - name: hello-world
-          env:
-            - name: COW_COLOR
-              value: green
+targetCustomizations:
+  - name: ny
+    yaml:
+      overlays:
+        - green-color
+    clusterGroup: new-york
+  - name: tx
+    yaml:
+      overlays:
+        - red-color
+    clusterGroup: texas 
