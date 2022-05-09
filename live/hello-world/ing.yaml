@@ -4,7 +4,6 @@ metadata:
   name: hellow-world-ing
 spec:
   rules:
-  - sslip.io
     - http:
         paths:
         - path: /
