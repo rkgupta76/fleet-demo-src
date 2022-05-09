@@ -4,13 +4,13 @@ metadata:
   name: hellow-world-ing
 spec:
   rules:
-      host: sslip.io
-      http:
-        paths:
-        - path: /
-          pathType: Prefix
-          backend:
-            service: 
-              name: hello-world-svclb
-              port:
-                number: 8080 
+    host: sslip.io
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service: 
+            name: hello-world-svclb
+            port:
+              number: 8080 
