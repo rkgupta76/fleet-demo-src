@@ -1,16 +1,16 @@
+
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: hellow-world-ing
 spec:
   rules:
-    host: sslip.io
-    http:
-      paths:
-      - path: /
-        pathType: Prefix
-        backend:
-          service: 
-            name: hello-world-svclb
-            port:
-              number: 8080 
+    - http:
+        paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service: 
+              name: hello-world-svclb
+              port:
+                number: 8080 
